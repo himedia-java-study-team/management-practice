@@ -12,8 +12,9 @@ public class BookController {
         view = new BookView();
     }
 
-    public void addBook() {
-
+    public void addBook(String title, String author, int isbn, boolean isForeignBook) {
+        Book book = new Book(title, author,isbn,isForeignBook);
+        library.addBook(book);
     }
 
     public void getBook() {
