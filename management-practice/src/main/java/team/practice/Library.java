@@ -22,8 +22,13 @@ public class Library {
         return books;
     }
 
-    public void updateBook() {
-
+    public Book updateBook(int isbn3, String title2) {
+        for(Book b : books) {
+            if(b.getIsbn() == isbn3);
+            b.setTitle(title2);
+            return b;
+        }
+        return null;
     }
 
     public Boolean deleteBook(int isbn) {
