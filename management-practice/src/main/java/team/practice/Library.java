@@ -18,8 +18,8 @@ public class Library {
 
     }
 
-    public void getBookList() {
-
+    public ArrayList<Book> getBookList() {
+        return books;
     }
 
     public void updateBook() {

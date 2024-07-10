@@ -24,7 +24,8 @@ public class BookController {
     }
 
     public void getBooks() {
-        library.getBookList();
+        ArrayList<Book> books = library.getBookList();
+        view.displayBookList(books);
     }
 
     public void updateBook(int isbn3, String title2) {
@@ -35,7 +36,7 @@ public class BookController {
     public void deleteBook(int isbn) {
         Boolean isDeleteSucess = library.deleteBook(isbn);
         if (isDeleteSucess) {
-            view.displayBook();
+            view.displayMessage("해당 도서 성공적으로 삭제완료.");
         }
     }
 }
