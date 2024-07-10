@@ -19,7 +19,13 @@ public class BookController {
 
     public void getBook() {
         Book book = library.getBook(ibsn2);
+        if(book !=null){
+            bookView.displayBook(book);
+        }else{
+            bookView.displayMessage("일치하는게 없습니다.");
+        }
 
+    }
 
     }
 
