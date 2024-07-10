@@ -46,7 +46,7 @@ public class Application {
             System.out.println("3) 도서 수정");
             System.out.println("4) 도서 삭제");
             System.out.println("5) 도서 전체 조회");
-            System.out.println("0) 프로그램 종료");
+            System.out.println("9) 프로그램 종료");
             System.out.print("메뉴를 고르세요 : ");
             int num = sc.nextInt();
             sc.nextLine();
