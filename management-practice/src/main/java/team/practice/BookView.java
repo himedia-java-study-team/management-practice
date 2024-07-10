@@ -12,7 +12,7 @@ public class BookView {
 
     }
 
-    public void displayMessage() {
-
+    public void displayMessage(String message) {
+        System.out.println(message);
     }
 }
