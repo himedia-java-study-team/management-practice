@@ -22,7 +22,7 @@ public class BookController {
     }
 
     public void getBooks() {
-
+        library.getBookList();
     }
 
     public void updateBook() {
@@ -30,6 +30,7 @@ public class BookController {
     }
 
     public void deleteBook() {
-
+        library.deleteBook();
+        view.displayBook();
     }
 }
