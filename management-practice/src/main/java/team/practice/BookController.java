@@ -32,8 +32,10 @@ public class BookController {
         view.displayMessage(" 도서 수정이 완료 되었습니다! ");
     }
 
-    public void deleteBook() {
-        library.deleteBook();
-        view.displayBook();
+    public void deleteBook(int isbn) {
+        Boolean isDelete = library.deleteBook(isbn);
+        if (isDelete) {
+            view.displayBook();
+        }
     }
 }
