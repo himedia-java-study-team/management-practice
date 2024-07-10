@@ -26,8 +26,14 @@ public class Library {
 
     }
 
-    public void deleteBook() {
-
+    public Boolean deleteBook(int isbn) {
+        for (Book b : books) {
+            if (b.getIsbn() == isbn) {
+                books.remove(b);
+                return true;
+            }
+        }
+        return false;
     }
 
 }
