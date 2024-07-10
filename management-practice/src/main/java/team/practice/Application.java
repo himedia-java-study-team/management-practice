@@ -82,7 +82,7 @@ public class Application {
                     controller.updateBook(isbn3, title2);
                     break;
                 case 4:
-                    System.out.print("수정할 도서의 ISBN : ");
+                    System.out.print("삭제할 도서의 ISBN : ");
                     int isbn4 = sc.nextInt();
 
                     controller.deleteBook(isbn4);
