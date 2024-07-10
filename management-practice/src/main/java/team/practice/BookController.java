@@ -17,6 +17,8 @@ public class BookController {
     }
 
     public void getBook() {
+        Book book = library.getBook(ibsn2);
+
 
     }
 
