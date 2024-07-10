@@ -18,6 +18,8 @@ public class BookController {
     }
 
     public void getBook() {
+        Book book = library.getBook(ibsn2);
+
 
     }
 
@@ -25,8 +27,9 @@ public class BookController {
         library.getBookList();
     }
 
-    public void updateBook() {
-
+    public void updateBook(int isbn3, String title2) {
+        library.updateBook(isbn3,title2);
+        view.displayMessage(" 도서 수정이 완료 되었습니다! ");
     }
 
     public void deleteBook() {
