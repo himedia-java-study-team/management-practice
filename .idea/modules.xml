@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/management-practice.management-practice.iml" filepath="$PROJECT_DIR$/.idea/modules/management-practice.management-practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/management-practice.management-practice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/management-practice.management-practice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/management-practice.management-practice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/management-practice.management-practice.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/myPractice.iml" filepath="$PROJECT_DIR$/.idea/myPractice.iml" />
     </modules>
   </component>

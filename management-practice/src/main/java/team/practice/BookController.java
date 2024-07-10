@@ -12,8 +12,9 @@ public class BookController {
         view = new BookView();
     }
 
-    public void addBook() {
-
+    public void addBook(String title, String author, int isbn, boolean isForeignBook) {
+        Book book = new Book(title, author,isbn,isForeignBook);
+        library.addBook(book);
     }
 
     public void getBook() {
@@ -31,8 +32,10 @@ public class BookController {
         view.displayMessage(" 도서 수정이 완료 되었습니다! ");
     }
 
-    public void deleteBook() {
-        library.deleteBook();
-        view.displayBook();
+    public void deleteBook(int isbn) {
+        Boolean isDeleteSucess = library.deleteBook(isbn);
+        if (isDeleteSucess) {
+            view.displayBook();
+        }
     }
 }
