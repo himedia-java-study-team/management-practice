@@ -33,8 +33,8 @@ public class BookController {
     }
 
     public void deleteBook(int isbn) {
-        Boolean isDelete = library.deleteBook(isbn);
-        if (isDelete) {
+        Boolean isDeleteSucess = library.deleteBook(isbn);
+        if (isDeleteSucess) {
             view.displayBook();
         }
     }
